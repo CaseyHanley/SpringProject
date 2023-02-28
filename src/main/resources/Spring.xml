@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                    http://www.springframework.org/schema/util
+                    http://www.springframework.org/schema/util/spring-util-2.5.xsd">
+
+    <!-- bean definitions here -->
+
+    <util:list id="phoneNumbers" value-type="java.lang.String">
+        <value>111222333</value>
+        <value>121232333</value>
+        <value>113224333</value>
+    </util:list>
+
+    <bean id="student" class="org.example.student">
+        <property name="id" value="01"/>
+        <property name="name" value="Steven"/>
+        <property name="ph"><list value-type="phone">
+            <ref bean="phone"/>
+            <ref bean="phone"/>
+            <ref bean="phone"/>
+
+        </list> </property>
+        <property name="add" ref="address"/>
+    </bean>
+
+
+    <bean id="address" class="org.example.Address">
+        <property name="city" value="Versailles"/>
+        <property name="state" value="Missouri"/>
+        <property name="country" value="USA"/>
+        <property name="zipcode" value="65084"/>
+
+
+    </bean>
+
+    <bean id="phone" class="org.example.Phone">
+    <property name="mob" value="1112223333"/>
+
+    </bean>
+
+</beans>
