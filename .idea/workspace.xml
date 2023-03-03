@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3397ee7a-8d7f-4159-9f23-6f07605eb916" name="Changes" comment="Finsihed Base" />
+    <list default="true" id="3397ee7a-8d7f-4159-9f23-6f07605eb916" name="Changes" comment="Finsihed Base">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
